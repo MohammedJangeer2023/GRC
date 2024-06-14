@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISMS Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ISMS Documentation</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dfd_threat_modelling.html">DFD Threat Model</a></li>
+                <li><a href="network_map.html">Network Map</a></li>
+                <li><a href="risk_register.html">Risk Register</a></li>
+                <li><a href="risk_assessment.html">Risk Assessment</a></li>
+                <li><a href="vulnerability_management.html">Vulnerability Management</a></li>
+                <li><a href="isms.html">ISMS Documentation</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>ISO 27001:2022 Information Security Management System (ISMS) for MJ Residence</h2>
+            <p>Approval</p>
+            <p>The signatures below certify that this ISMS policy has been authorized and demonstrate that I am aware of all the requirements contained herein and am committed to ensuring their provision.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Signature</th>
+                        <th>Position/Title</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Prepared by: Mohammed Jangeer</td>
+                        <td>M.j</td>
+                        <td>Information Security Analyst</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Reviewed by:</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Approved by:</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Amendment Record</p>
+            <p>This ISMS policy is reviewed to ensure its continuing relevance to the systems and processes it describes, and a record of contextual additions or omissions is given below:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Page No.</th>
+                        <th>Context</th>
+                        <th>Revision</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Purpose</h3>
+            <p>The purpose of this policy is to establish an Information Security Management System (ISMS) at MJ Residence. I have established an ISMS in accordance with ISO/IEC 27001 (“ISO 27001”) that governs the processes required to protect home and information assets. This document specifies the scope of the ISMS and PIMS at MJ Residence.</p>
+            <h3>Policy Scope</h3>
+            <p>The policy applies to all home software and hardware infrastructure, devices, systems, and data, covers all home products and services, and must be adhered to by all residents and contractors.</p>
+            <h3>Ownership</h3>
+            <p>I, Mohammed Jangeer, am responsible for implementing and maintaining this policy.</p>
+            <h3>Policy Objective</h3>
+            <p>The objective of my Executive Management is to continually strengthen and improve the overall capabilities of the ISMS, to increase professional skills in terms of information security management and technology, to make the MJ Residence management system so complete that reliable certification standards are effective, to ensure information-related operations continue to meet certification standards, and to establish a sustainable operation plan that is cost-effective. Specific objectives include:</p>
+            <ul>
+                <li>Information is only accessible to authorized persons.</li>
+                <li>Confidentiality of information is maintained.</li>
+                <li>Integrity of information is maintained throughout the process.</li>
+                <li>Business continuity plans are established, maintained, and tested.</li>
+                <li>All residents are trained on information security and compliance with the policy is mandatory.</li>
+                <li>All breaches of information security and suspected weaknesses are reported and investigated.</li>
+                <li>Procedures exist to support the policy, including virus control measures, passwords, and continuity plans.</li>
+                <li>Business requirements for the availability of information and systems will be met.</li>
+                <li>I am responsible for maintaining the policy and providing support and advice during its implementation.</li>
+                <li>All managers are directly responsible for implementing the policy and ensuring resident compliance in their respective areas.</li>
+            </ul>
+            <h3>Scope of the ISMS</h3>
+            <p>The scope of the ISO 27001 certification is limited to the ISMS supporting the assets, technologies, and processes employed by MJ Residence located at [Residence Location]. This includes the protection of the confidentiality, integrity, and availability of information.</p>
+            <h3>Assets</h3>
+            <p>The assets of the ISMS include information, application, database, cloud services, and personnel:</p>
+            <ul>
+                <li>Home systems</li>
+                <li>Locations</li>
+                <li>Home locations</li>
+                <li>Departments</li>
+            </ul>
+            <p>The following areas are in-scope for the ISMS:</p>
+            <ul>
+                <li>Home areas</li>
+                <li>Personnel</li>
+                <li>All residents and associated personnel are in-scope for the ISMS.</li>
+            </ul>
+            <h3>Scope Exclusions and Boundaries</h3>
+            <p>MJ Residence uses Amazon Web Services (“AWS”) for cloud computing and storage services. Amazon is responsible for managing logical access to the underlying network, system management, and storage devices for its cloud service hosting MJ Residence data.</p>
+            <p>Amazon is responsible for the physical security and environmental controls at data center facilities hosting MJ Residence systems; therefore, physical security and environmental controls are out of scope for those facilities.</p>
+            <p>Amazon is responsible for the secure deletion of data and disposal of equipment used to support MJ Residence operations.</p>
+            <p>MJ Residence information, application, database, facility, and personnel assets that are not related to the identified in-scope components are out of scope for the ISMS.</p>
+            <h3>Information Security Objectives</h3>
+            <p>Information security objectives are set and monitored annually by my ISMS Committee based on a clear understanding of requirements. The current information security objectives are as follows:</p>
+            <ul>
+                <li>Protect the confidentiality, availability, and integrity of home, resident, and personal data.</li>
+                <li>Comply with applicable laws, regulations, and contractual obligations.</li>
+                <li>Achieve and maintain ISO 27001 certifications.</li>
+            </ul>
+            <p>The action plans to achieve these objectives are maintained and reviewed annually by the ISMS Committee.</p>
+            <h3>Objective Description</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Objective</th>
+                        <th>Action Plan to Achieve Objectives</th>
+                        <th>Effectiveness Measure(s)</th>
+                        <th>Resources Required</th>
+                        <th>Owner</th>
+                        <th>ETA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Protect the confidentiality of resident data</td>
+                        <td>Adhere to access control requirements; perform risk assessment</td>
+                        <td>Remediation plans for high-risk vulnerabilities</td>
+                        <td>Competent team</td>
+                        <td>IS owner</td>
+                        <td>Ongoing</td>
+                    </tr>
+                    <tr>
+                        <td>Comply with applicable laws/regulations and contractual obligations</td>
+                        <td>Identify applicable laws/regulations and obligations</td>
+                        <td>Less than one (1) reportable breach event</td>
+                        <td>Competent team</td>
+                        <td>IS owner</td>
+                        <td>Ongoing</td>
+                    </tr>
+                    <tr>
+                        <td>Achieve and maintain ISO 27001 certifications</td>
+                        <td>Implement an ISMS</td>
+                        <td>Obtain ISO 27001 certification</td>
+                        <td>Competent team</td>
+                        <td>IS owner</td>
+                        <td>Ongoing</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Leadership and Commitment</h3>
+            <p>I am dedicated to establishing, implementing, maintaining, and continually improving the ISMS. Leadership commitment is demonstrated by the ISMS Committee when carrying out their responsibilities.</p>
+            <h3>ISMS Roles, Responsibilities, and Authorities</h3>
+            <p>Involvement from top management is critical to the ISMS's design and effectiveness. Roles and responsibilities include:</p>
+            <ul>
+                <li>I, as the Board of Directors, am responsible for oversight of internal controls.</li>
+                <li>The ISMS Committee, chaired by [Title], supports information security and drives the future vision of information security.</li>
+                <li>Senior management is responsible for making strategic decisions and ensuring alignment with strategic objectives.</li>
+                <li>Managers are responsible for effective management of resources towards accomplishing security goals.</li>
+                <li>Residents are responsible for implementing good security practices.</li>
+            </ul>
+            <h3>Interested Parties of the ISMS</h3>
+            <p>I define interested parties as individuals or entities with an interest in the ISMS. These can include residents, suppliers, data subjects, shareholders, prospects, board members, competitors, regulators, and media. Their needs will be considered in the risk assessment process.</p>
+            <h3>Stakeholders</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Stakeholder</th>
+                        <th>Impact</th>
+                        <th>Needs/Expectation</th>
+                        <th>Legal Obligations</th>
+                        <th>Actions Required</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Residents</td>
+                        <td>Medium</td>
+                        <td>Clear instructions on security, data handling</td>
+                        <td>Yes</td>
+                        <td>Training program, available policies</td>
+                    </tr>
+                    <tr>
+                        <td>Customers</td>
+                        <td>Medium</td>
+                        <td>Available service, data security</td>
+                        <td>Yes</td>
+                        <td>Service agreements, secure practices monitoring</td>
+                    </tr>
+                    <tr>
+                        <td>Vendors</td>
+                        <td>Medium</td>
+                        <td>Achievable contractual agreements</td>
+                        <td>Yes</td>
+                        <td>Contract monitoring, secure practices monitoring</td>
+                    </tr>
+                    <tr>
+                        <td>Investors</td>
+                        <td>High</td>
+                        <td>Confidence in the ISMS program</td>
+                        <td>Yes</td>
+                        <td>Secure practices monitoring, third-party audits</td>
+                    </tr>
+                    <tr>
+                        <td>Prospects</td>
+                        <td>Medium</td>
+                        <td>Assurance of data security</td>
+                        <td>No</td>
+                        <td>Secure practices monitoring, third-party audits</td>
+                    </tr>
+                    <tr>
+                        <td>Senior Management</td>
+                        <td>High</td>
+                        <td>Best practices certification maintenance</td>
+                        <td>No</td>
+                        <td>Secure practices monitoring, third-party audits</td>
+                    </tr>
+                    <tr>
+                        <td>Board Members</td>
+                        <td>High</td>
+                        <td>Confidence in the ISMS program</td>
+                        <td>No</td>
+                        <td>Secure practices monitoring, third-party audits</td>
+                    </tr>
+                    <tr>
+                        <td>Regulators</td>
+                        <td>High</td>
+                        <td>Security controls, breach notifications</td>
+                        <td>Yes</td>
+                        <td>Third-party audits, continual improvement</td>
+                    </tr>
+                    <tr>
+                        <td>Media</td>
+                        <td>High</td>
+                        <td>Transparency regarding incidents</td>
+                        <td>No</td>
+                        <td>System status page, incident response plan</td>
+                    </tr>
+                    <tr>
+                        <td>Hackers</td>
+                        <td>High</td>
+                        <td>Interested in weak security practices</td>
+                        <td>No</td>
+                        <td>Penetration testing, vulnerability scanning, third-party audits</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Internal and External Issues</h3>
+            <p>There are internal and external issues relevant to MJ Residence that affect the ISMS's ability to achieve its intended outcomes.</p>
+            <h4>Internal Issues</h4>
+            <ul>
+                <li>Employee relations uncertainties</li>
+                <li>Organizational changes</li>
+                <li>Location moves</li>
+                <li>Financial performance</li>
+                <li>Company culture</li>
+                <li>Resources and knowledge</li>
+                <li>Governance and structure</li>
+                <li>Adopted standards and models</li>
+                <li>Contractual relationships</li>
+            </ul>
+            <h4>External Issues</h4>
+            <ul>
+                <li>Political changes</li>
+                <li>Government policy changes</li>
+                <li>Government instability</li>
+                <li>Unrest in operating countries</li>
+                <li>Trade restrictions and tariffs</li>
+                <li>Economic climate</li>
+                <li>Interest and inflation rates</li>
+                <li>Supplier failure</li>
+                <li>Lack of customer demand</li>
+                <li>Globalization of supply/demand</li>
+                <li>Competition</li>
+                <li>Social attitudes</li>
+                <li>Technology pace of innovation</li>
+                <li>Supporting technologies</li>
+                <li>Automation and AI</li>
+                <li>Legislative changes</li>
+                <li>Regulatory changes</li>
+                <li>Data protection</li>
+                <li>Environmental issues (climate change, natural disasters, pollution)</li>
+            </ul>
+            <h3>Relevant Laws, Regulations, and Contractual Requirements</h3>
+            <p>I identify, update, and maintain a list of applicable laws and regulatory authorities to stay current with legislation that may affect business objectives.</p>
+            <h4>Regulation/Authorities</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Regulation</th>
+                        <th>Authority</th>
+                        <th>Contractual Requirement</th>
+                        <th>Circumstances</th>
+                        <th>Contact</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HIPAA</td>
+                        <td>OCR</td>
+                        <td>Security Rule</td>
+                        <td>Breach Notification</td>
+                        <td>(202) 690-6343 OCRMedia@hhs.gov</td>
+                    </tr>
+                    <tr>
+                        <td>GDPR</td>
+                        <td>Data Protection Authority</td>
+                        <td>Data violation</td>
+                        <td>Local DPA authority</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>ISACA</td>
+                        <td>Professional Association</td>
+                        <td>Maintain yearly CPE</td>
+                        <td>Certification upkeep</td>
+                        <td>1.847.660.5505</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Risk Assessment and Risk Treatment</h3>
+            <p>I have defined a process for identifying, analyzing, treating, and monitoring risks. The risk acceptance criteria and analysis are documented in the risk register and risk management policy.</p>
+            <h3>Statement of Applicability (SOA)</h3>
+            <p>The SOA defines information security control objectives and controls based on business needs, legal and regulatory requirements, and contractual obligations. It is reviewed and approved by management.</p>
+            <h3>Performing Risk Assessments</h3>
+            <p>Risk assessments are performed quarterly or as needed under various circumstances, such as significant changes, software development, third-party supplier engagements, and external changes.</p>
+            <h3>Management Approval</h3>
+            <p>The ISMS Committee reviews and approves the SOA and risk assessment highlights. Feedback may be provided during annual management reviews or as needed.</p>
+            <h3>Resources and Competence</h3>
+            <p>Annually, I assess personnel performance and competence against ISMS requirements, addressing any competency gaps through training, mentoring, reassignment, or supplementing with contractors.</p>
+            <h3>Training and Awareness</h3>
+            <p>All residents must complete Security Awareness Training upon joining and annually thereafter. Additional training may be required due to security incidents, new technology adoption, or policy changes. Records of training completion are maintained.</p>
+            <h3>ISMS Communication</h3>
+            <p>Internal communications relevant to the ISMS, such as updates, audit results, and continual improvement efforts, are shared with the Board of Directors, senior management, and all residents. External communications are shared on the company's website and with approved third parties as needed.</p>
+            <h3>ISMS Documentation</h3>
+            <p>I maintain mandatory documented information relating to the ISMS. This includes ISMS management policies and information security policies stored in the compliance management tool and internally-shared storage.</p>
+            <h4>Document Name</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Document Name</th>
+                        <th>Storage Location</th>
+                        <th>Ownership</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ISMS policy</td>
+                        <td>Trust Cloud, internal drive</td>
+                        <td>ISMS Committee</td>
+                    </tr>
+                    <tr>
+                        <td>Access Control Policy</td>
+                        <td>Trust Cloud, internal drive</td>
+                        <td>IS Team</td>
+                    </tr>
+                    <tr>
+                        <td>Asset Management Policy</td>
+                        <td>Trust Cloud, internal drive</td>
+                        <td>IS Team</td>
+                    </tr>
+                    <tr>
+                        <td>Business Continuity and Disaster Recovery Plan</td>
+                        <td>Trust Cloud, internal drive</td>
+                        <td>IS Team</td>
+                    </tr>
+                    <tr>
+                        <td>Cryptography Policy</td>
+                        <td>Trust Cloud, internal drive</td>
+                        <td>IS Team</td>
+                    </tr>
+                    <tr>
+                        <td>Data Management Policy</td>
+                        <td>Trust Cloud, internal drive</td>
+                        <td>IS Team</td>
+                    </tr>
+                    <tr>
+                        <td>Human Resource Security Policy</td>
+                        <td>Trust Cloud, internal drive</td>
+                        <td>IS Team</td>
+                    </tr>
+                    <tr>
+                        <td>Incident Response Plan</td>
+                        <td>Trust Cloud, internal drive</td>
+                        <td>IS Team</td>
+                    </tr>
+                    <tr>
+                        <td>Information Security Policy</td>
+                        <td>Trust Cloud, internal drive</td>
+                        <td>IS Team</td>
+                    </tr>
+                    <tr>
+                        <td>Operations Security Policy</td>
+                        <td>Trust Cloud, internal drive</td>
+                        <td>IS Team</td>
+                    </tr>
+                    <tr>
+                        <td>Physical Security Policy</td>
+                        <td>Trust Cloud, internal drive</td>
+                        <td>IS Team</td>
+                    </tr>
+                    <tr>
+                        <td>Risk Management Policy</td>
+                        <td>Trust Cloud, internal drive</td>
+                        <td>IS Team</td>
+                    </tr>
+                    <tr>
+                        <td>Change Management Policy</td>
+                        <td>Trust Cloud, internal drive</td>
+                        <td>IS Team</td>
+                    </tr>
+                    <tr>
+                        <td>Vendor Management Policy</td>
+                        <td>Trust Cloud, internal drive</td>
+                        <td>IS Team</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Document Approvals</h3>
+            <p>Documentation is updated and approved annually, with the most recent version made available to all residents. A historical approval log tracks changes.</p>
+            <h3>Documentation Archival, Retention, and Disposal</h3>
+            <p>The ISMS Committee approves ISMS documents. The Information Security Management Leader implements directives and maintains policy changes. Documentation is retained for at least six years, with archived documents maintained for at least three years. Secure deletion is used for disposal.</p>
+            <h3>ISMS Internal Audit (IA)</h3>
+            <p>The internal audit evaluates the ISMS's compliance with ISO 27001, identifying opportunities for improvement. The scope includes all in-scope information assets and controls identified within the SOA. A third-party vendor may be engaged for internal audits.</p>
+            <h4>Auditor Selection</h4>
+            <p>Auditors must be trained and qualified, with proper segregation of duties. Auditor competence is validated based on education and experience.</p>
+            <h4>Resources</h4>
+            <p>Third-party auditors, along with the Information Security Management Leader and IS Team, conduct the audit.</p>
+            <h4>Frequency & Schedule</h4>
+            <p>Internal audits are conducted annually, with frequency adjusted based on audit findings and control effectiveness.</p>
+            <h4>Audit Criteria</h4>
+            <p>Audit criteria include ISMS policies and procedures, regulatory requirements, ISO 27001, and additional standards as necessary.</p>
+            <h4>Evaluation Criteria and Alternative Labeling of Findings</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Finding Type</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Major NC</td>
+                        <td>Immediate adverse effect on ISMS objectives</td>
+                    </tr>
+                    <tr>
+                        <td>Minor NC</td>
+                        <td>Long-term adverse effect on ISMS objectives</td>
+                    </tr>
+                    <tr>
+                        <td>Conforms</td>
+                        <td>Controls are effective and compliant</td>
+                    </tr>
+                    <tr>
+                        <td>OFI</td>
+                        <td>Opportunities for Improvement</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h4>Audit Documentation</h4>
+            <p>Auditors collect artifacts, documents, observations, and interviews as evidence. A final report is shared with the Information Security Leader and ISMS Committee.</p>
+            <h4>Audit Records Retention</h4>
+            <p>Audit evidence and documentation are protected and retained according to ISMS Documentation requirements.</p>
+            <h3>Management Review</h3>
+            <p>My ISMS Management Review Procedure ensures the ISMS operates effectively and continually improves. Inputs may include changes in context, needs of interested parties, legal requirements, risk assessment results, audit observations, and more. The ISMS Committee reviews and approves decisions and actions.</p>
+            <h3>Corrective Action and Continual Improvement</h3>
+            <p>Non-conformities identified during audits or reviews are addressed through a corrective action and improvement plan. This includes updating relevant documentation and monitoring the status of open items.</p>
+            <h3>Policy Violation</h3>
+            <p>All personnel must maintain the security, confidentiality, availability, integrity, and privacy of MJ Residence assets. Violations may result in disciplinary action, including termination and legal prosecution.</p>
+            <p>Authoriser: Mohammed Jangeer</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

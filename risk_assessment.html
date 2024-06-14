@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Assessment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Risk Assessment</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dfd_threat_modelling.html">DFD Threat Model</a></li>
+                <li><a href="network_map.html">Network Map</a></li>
+                <li><a href="risk_register.html">Risk Register</a></li>
+                <li><a href="risk_assessment.html">Risk Assessment</a></li>
+                <li><a href="vulnerability_management.html">Vulnerability Management</a></li>
+                <li><a href="isms.html">ISMS Documentation</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Assessing Network Risks</h2>
+            <table id="riskAssessment">
+                <thead>
+                    <tr>
+                        <th>Control</th>
+                        <th>ISO 27001 Control Reference</th>
+                        <th>Asset</th>
+                        <th>Asset Reference Number</th>
+                        <th>Confidential</th>
+                        <th>Risk Details</th>
+                        <th>Risk Rating</th>
+                        <th>Complete</th>
+                    </tr>
+                </thead>
+                <tbody id="riskAssessmentBody">
+                    <tr>
+                        <td>Access Control</td>
+                        <td>A.9.1</td>
+                        <td>Core Router</td>
+                        <td>CR-01</td>
+                        <td>Yes</td>
+                        <td>Unauthorized access to Core Router</td>
+                        <td>High</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Vulnerability Management</td>
+                        <td>A.12.6</td>
+                        <td>Web Server</td>
+                        <td>WS-01</td>
+                        <td>Yes</td>
+                        <td>Exploitation of CVE vulnerabilities on Web Server</td>
+                        <td>High</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Awareness Training</td>
+                        <td>A.7.2</td>
+                        <td>All Users</td>
+                        <td>AU-01</td>
+                        <td>Yes</td>
+                        <td>Phishing attack leading to credential compromise</td>
+                        <td>Medium</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Network Security</td>
+                        <td>A.13.1</td>
+                        <td>Firewall1</td>
+                        <td>FW-01</td>
+                        <td>Yes</td>
+                        <td>DoS attack on Firewall1</td>
+                        <td>High</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Application Security</td>
+                        <td>A.14.2</td>
+                        <td>Web Server</td>
+                        <td>WS-01</td>
+                        <td>Yes</td>
+                        <td>SQL Injection on the Web Server</td>
+                        <td>High</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Application Security</td>
+                        <td>A.14.2</td>
+                        <td>Web Application</td>
+                        <td>WA-01</td>
+                        <td>Yes</td>
+                        <td>XSS attack on Web Application</td>
+                        <td>Medium</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Configuration Management</td>
+                        <td>A.12.5</td>
+                        <td>Gateway Switch</td>
+                        <td>GS-01</td>
+                        <td>Yes</td>
+                        <td>Misconfiguration of Gateway Switch</td>
+                        <td>Medium</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Transport Layer Security</td>
+                        <td>A.13.2</td>
+                        <td>All Network Devices</td>
+                        <td>ND-01</td>
+                        <td>Yes</td>
+                        <td>Interception of HTTPS traffic</td>
+                        <td>High</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Access Control</td>
+                        <td>A.9.1</td>
+                        <td>Internal Network</td>
+                        <td>IN-01</td>
+                        <td>Yes</td>
+                        <td>Privilege escalation on internal network</td>
+                        <td>High</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Network Security</td>
+                        <td>A.13.1</td>
+                        <td>ISP Router</td>
+                        <td>IR-01</td>
+                        <td>Yes</td>
+                        <td>BGP route hijacking</td>
+                        <td>High</td>
+                        <td>No</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

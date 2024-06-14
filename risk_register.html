@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Risk Register</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dfd_threat_modelling.html">DFD Threat Model</a></li>
+                <li><a href="network_map.html">Network Map</a></li>
+                <li><a href="risk_register.html">Risk Register</a></li>
+                <li><a href="risk_assessment.html">Risk Assessment</a></li>
+                <li><a href="vulnerability_management.html">Vulnerability Management</a></li>
+                <li><a href="isms.html">ISMS Documentation</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Network Risks</h2>
+            <div id="riskRegisterContainer">
+                <table id="riskRegister">
+                    <thead>
+                        <tr>
+                            <th>Risk ID</th>
+                            <th>Description</th>
+                            <th>Impact</th>
+                            <th>Likelihood</th>
+                            <th>Mitigation</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="riskRegisterBody">
+                        <tr>
+                            <td>1</td>
+                            <td>Unauthorized access to Core Router</td>
+                            <td>High</td>
+                            <td>Medium</td>
+                            <td>Implement strong authentication and regular audits</td>
+                            <td>Open</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Exploitation of CVE vulnerabilities on Web Server</td>
+                            <td>High</td>
+                            <td>High</td>
+                            <td>Apply patches and conduct regular vulnerability assessments</td>
+                            <td>Open</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Phishing attack leading to credential compromise</td>
+                            <td>Medium</td>
+                            <td>High</td>
+                            <td>Conduct employee training and implement email filtering</td>
+                            <td>Open</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>DoS attack on Firewall1</td>
+                            <td>High</td>
+                            <td>Medium</td>
+                            <td>Implement rate limiting and use anti-DoS protection services</td>
+                            <td>Open</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>SQL Injection on the Web Server</td>
+                            <td>High</td>
+                            <td>Medium</td>
+                            <td>Use parameterized queries and input validation</td>
+                            <td>Open</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>XSS attack on Web Application</td>
+                            <td>Medium</td>
+                            <td>High</td>
+                            <td>Implement proper input sanitization and content security policies</td>
+                            <td>Open</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Misconfiguration of Gateway Switch</td>
+                            <td>Medium</td>
+                            <td>Medium</td>
+                            <td>Conduct regular configuration reviews and use automated tools for validation</td>
+                            <td>Open</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Interception of HTTPS traffic</td>
+                            <td>High</td>
+                            <td>Medium</td>
+                            <td>Implement HSTS and use secure ciphersuites</td>
+                            <td>Open</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Privilege escalation on internal network</td>
+                            <td>High</td>
+                            <td>Medium</td>
+                            <td>Implement least privilege principle and regular privilege reviews</td>
+                            <td>Open</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>BGP route hijacking</td>
+                            <td>High</td>
+                            <td>Low</td>
+                            <td>Use BGP route validation and monitoring</td>
+                            <td>Open</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
