@@ -1,3 +1,3 @@
 # GRC
 
-https://mohammedjangeer2023.github.io/GRC/index.html
+https://mohammedjangeer2023.github.io/GRC/
