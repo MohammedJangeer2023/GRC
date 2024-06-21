@@ -44,12 +44,13 @@ The Threat Actors section describes different types of threat actors, including 
 
 Introduction:
 
-The CTI (Cyber Threat Intelligence) section focuses on the ongoing development of various monitoring tools used in threat intelligence. These tools are designed to protect MJ Residence from emerging threats and enhance the organisation's overall security posture.
+The CTI (Cyber Threat Intelligence) section focuses on the ongoing development of various monitoring tools used in threat intelligence. These tools protect MJ Residence from emerging threats and enhance the organisation's overall security posture.
 
 Monitoring Tools:
 
 This section provides detailed information about the monitoring tools being developed and deployed. It includes descriptions of each tool, their functionalities, and how they contribute to the overall threat intelligence strategy.
 
+https://mohammedjangeer2023.github.io/GRC-CTI-Hub/
 
 
 
