@@ -5,19 +5,193 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Risk Register</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header img {
+            display: block;
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .socials {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .socials a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 5px 10px;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            display: block;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #444;
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li {
+            width: 200px;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        main h2 {
+            color: #333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        #riskRegisterContainer {
+            overflow-x: auto;
+        }
+
+        #riskRegister {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        #riskRegister th, #riskRegister td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #riskRegister th {
+            background-color: #333;
+            color: white;
+        }
+
+        #riskRegister tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #riskRegister tr:hover {
+            background-color: #ddd;
+        }
+
+        #riskRegister th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+        }
+
+        .bottom-nav {
+            background: #333;
+            padding: 10px 0;
+        }
+
+        .bottom-nav nav ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .bottom-nav nav ul li {
+            margin: 5px 10px;
+        }
+
+        .bottom-nav nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <header>
+        <div class="socials">
+            <a href="https://github.com/MohammedJangeer2023" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/mohammedjangeer/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <img src="GitHubProfilePic2.jpg" alt="Profile Picture">
         <h1>Risk Register</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="internalaudit.html">Internal Audit</a></li>
                 <li><a href="dfd_threat_modelling.html">DFD Threat Model</a></li>
                 <li><a href="network_map.html">Network Map</a></li>
                 <li><a href="risk_register.html">Risk Register</a></li>
                 <li><a href="risk_assessment.html">Risk Assessment</a></li>
                 <li><a href="vulnerability_management.html">Vulnerability Management</a></li>
-                <li><a href="isms.html">ISMS Documentation</a></li>
+                <li><a href="isms.html">ISMS</a></li>
+                <li><a href="ThreatVectors.html">Threat Vectors</a></li>
+                <li><a href="threattypes.html">Threat Types</a></li>
+                <li><a href="threatacrots.html">Threat Actors</a></li>
+                <li><a href="cti101.html">CTI</a></li>
             </ul>
         </nav>
     </header>
@@ -122,6 +296,26 @@
             </div>
         </section>
     </main>
-    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2024 CTI 101. All rights reserved.</p>
+    </footer>
+    <div class="bottom-nav">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="internalaudit.html">Internal Audit</a></li>
+                <li><a href="dfd_threat_modelling.html">DFD Threat Model</a></li>
+                <li><a href="network_map.html">Network Map</a></li>
+                <li><a href="risk_register.html">Risk Register</a></li>
+                <li><a href="risk_assessment.html">Risk Assessment</a></li>
+                <li><a href="vulnerability_management.html">Vulnerability Management</a></li>
+                <li><a href="isms.html">ISMS</a></li>
+                <li><a href="ThreatVectors.html">Threat Vectors</a></li>
+                <li><a href="threattypes.html">Threat Types</a></li>
+                <li><a href="threatacrots.html">Threat Actors</a></li>
+                <li><a href="cti101.html">CTI</a></li>
+            </ul>
+        </nav>
+    </div>
 </body>
 </html>

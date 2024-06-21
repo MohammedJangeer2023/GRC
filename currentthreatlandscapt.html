@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Current Threat Landscape</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #000;
+            line-height: 1.6;
+            position: relative;
+            padding-bottom: 100px; /* Space for the bottom nav */
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        nav ul li {
+            margin: 5px 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 3px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #444;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2, h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        ul li::before {
+            content: "• ";
+            color: #333;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Bottom navigation */
+        .bottom-nav {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .bottom-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .bottom-nav ul li {
+            margin: 0 10px;
+        }
+
+        .bottom-nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 3px;
+            transition: background-color 0.3s ease;
+        }
+
+        .bottom-nav ul li a:hover {
+            background-color: #444;
+        }
+
+        /* Make the page responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            header h1 {
+                font-size: 1.2em;
+            }
+
+            main {
+                padding: 10px;
+            }
+
+            section {
+                padding: 15px;
+            }
+
+            .bottom-nav ul {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Current Threat Landscape</h1>
+        
+    </header>
+    <main>
+        <section>
+            <h2>Introduction</h2>
+            <p>The threat landscape is constantly evolving, with new cyber threats emerging alongside advancements in technology. Staying informed about current threats is crucial for effective cybersecurity defense.</p>
+        </section>
+
+        <section>
+            <h2>Key Threat Trends</h2>
+            <p>Here are some of the key trends in the current cyber threat landscape:</p>
+            <ul>
+                <li><strong>Ransomware Attacks:</strong> Increasingly sophisticated and targeted attacks demanding ransom payments to restore encrypted data.</li>
+                <li><strong>Phishing and Social Engineering:</strong> Techniques used to trick individuals into revealing sensitive information.</li>
+                <li><strong>Advanced Persistent Threats (APTs):</strong> Long-term targeted attacks often backed by nation-states.</li>
+                <li><strong>Supply Chain Attacks:</strong> Compromising software or hardware components to infiltrate larger networks.</li>
+                <li><strong>Zero-Day Exploits:</strong> Attacks that exploit previously unknown vulnerabilities in software or hardware.</li>
+            </ul>
+            <p>For more details, visit the <a href="https://www.enisa.europa.eu/topics/cyber-threats/threats-and-trends" target="_blank">ENISA Threats and Trends</a> page.</p>
+        </section>
+
+        <section>
+            <h2>Open Source Intelligence (OSINT)</h2>
+            <p>Open Source Intelligence (OSINT) involves gathering and analyzing publicly available information to identify potential security threats.</p>
+            <p>For an in-depth understanding of OSINT, check out this <a href="https://www.sans.org/blog/what-is-open-source-intelligence/" target="_blank">SANS Institute article on OSINT</a>.</p>
+            <p>Here are some top OSINT platforms:</p>
+            <ul>
+                <li>Shodan</li>
+                <li>Maltego</li>
+                <li>Recon-ng</li>
+                <li>TheHarvester</li>
+                <li>SpiderFoot</li>
+            </ul>
+            <p>For more information, read this <a href="https://cybermagazine.com/top10/The-Top-10-open-source-intelligence-platforms-for-amateur-spies" target="_blank">Cyber Magazine article on OSINT platforms</a>.</p>
+        </section>
+
+        <section>
+            <h2>Defensive Strategies</h2>
+            <p>Implementing robust defensive strategies is essential to protect against the evolving threat landscape. Key strategies include:</p>
+            <ul>
+                <li><strong>Regular Security Training:</strong> Educating employees on the latest threats and how to avoid them.</li>
+                <li><strong>Advanced Threat Detection:</strong> Using tools like SIEM and endpoint detection and response (EDR) systems to identify and respond to threats in real-time.</li>
+                <li><strong>Patch Management:</strong> Regularly updating software and systems to protect against known vulnerabilities.</li>
+                <li><strong>Network Segmentation:</strong> Dividing networks into segments to limit the spread of attacks.</li>
+                <li><strong>Incident Response Planning:</strong> Having a well-defined plan to respond to and recover from cyber incidents.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Conclusion</h2>
+            <p>Understanding the current threat landscape is critical for developing effective cybersecurity defenses. By staying informed about the latest threats and trends, organizations can better protect their systems and data from cyber attacks.</p>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

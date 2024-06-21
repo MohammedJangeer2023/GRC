@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Threat Vectors - MJ Residence</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        header img {
+            display: block;
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .socials {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .socials a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 24px;
+        }
+        nav {
+            margin-top: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            margin: 5px 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            display: block;
+        }
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        section {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        section h2 {
+            margin-top: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="socials">
+            <a href="https://github.com/MohammedJangeer2023" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/mohammedjangeer/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <img src="GitHubProfilePic2.jpg" alt="Profile Picture">
+        <h1>Threat Vectors - MJ Residence</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="internalaudit.html">Internal Audit</a></li>
+                <li><a href="dfd_threat_modelling.html">DFD Threat Model</a></li>
+                <li><a href="network_map.html">Network Map</a></li>
+                <li><a href="risk_register.html">Risk Register</a></li>
+                <li><a href="risk_assessment.html">Risk Assessment</a></li>
+                <li><a href="vulnerability_management.html">Vulnerability Management</a></li>
+                <li><a href="isms.html">ISMS</a></li>
+                <li><a href="ThreatVectors.html">Threat Vectors</a></li>
+                <li><a href="threattypes.html">Threat Types</a></li>
+                <li><a href="threatactors.html">Threat Actors</a></li>
+                <li><a href="cti101.html">CTI</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Potential Threat Vectors for MJ Residence</h2>
+            <table id="threatVectors">
+                <thead>
+                    <tr>
+                        <th>Threat Vector</th>
+                        <th>Description</th>
+                        <th>MITRE ATT&CK Tactic</th>
+                        <th>MITRE ATT&CK Technique</th>
+                        <th>Mitigation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Phishing Attack</td>
+                        <td>Attackers send deceptive emails to trick users into revealing sensitive information.</td>
+                        <td>Initial Access</td>
+                        <td>Phishing (T1566)</td>
+                        <td>Implement email filtering and educate users on recognizing phishing attempts.</td>
+                    </tr>
+                    <tr>
+                        <td>Brute Force Attack</td>
+                        <td>Attackers attempt to gain access by systematically guessing passwords.</td>
+                        <td>Credential Access</td>
+                        <td>Brute Force (T1110)</td>
+                        <td>Enforce strong password policies and implement multi-factor authentication (MFA).</td>
+                    </tr>
+                    <tr>
+                        <td>Malware Infection</td>
+                        <td>Malware is introduced to the network via infected email attachments or malicious websites.</td>
+                        <td>Execution</td>
+                        <td>Malicious File (T1204.002)</td>
+                        <td>Deploy antivirus software and regularly update all systems and software.</td>
+                    </tr>
+                    <tr>
+                        <td>Unauthorized Network Access</td>
+                        <td>Attackers gain unauthorized access to the home network through unsecured devices.</td>
+                        <td>Lateral Movement</td>
+                        <td>Exploitation of Remote Services (T1210)</td>
+                        <td>Secure all devices, change default passwords, and use network segmentation.</td>
+                    </tr>
+                    <tr>
+                        <td>Data Exfiltration</td>
+                        <td>Attackers steal sensitive data from the network and send it to an external location.</td>
+                        <td>Exfiltration</td>
+                        <td>Exfiltration Over C2 Channel (T1041)</td>
+                        <td>Monitor network traffic and use data loss prevention (DLP) tools.</td>
+                    </tr>
+                    <tr>
+                        <td>Physical Intrusion</td>
+                        <td>Unauthorized physical access to the residence to steal or tamper with devices.</td>
+                        <td>Impact</td>
+                        <td>Physical Theft (T1070)</td>
+                        <td>Install surveillance systems and secure entry points.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

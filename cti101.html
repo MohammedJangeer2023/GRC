@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to CTI 101</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+        }
+        header img {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 80px; /* Increase the size */
+            height: 80px; /* Increase the size */
+            border-radius: 50%;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            margin: 5px 10px;
+            position: relative;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            display: block;
+        }
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #444;
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 1;
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+        nav ul li ul li {
+            width: 200px;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        main h2 {
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        img.large {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="GitHubProfilePic2.jpg" alt="Profile Picture">
+        <h1>Cyber Threat Intelligence</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Understanding the Threat Landscape</a>
+                    <ul>
+                        <li><a href="currentthreatlandscapt.html">CTI/OSINT</a></li>
+                        <li><a href="SocialEngineering.html">Social Engineering</a></li>
+                        <li><a href="InsiderThreat.html">Insider Threat</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Detection and Analysis</a>
+                    <ul>
+                        <li><a href="SecureCyberTool.html">Cyber Tools</a></li>
+                        <li><a href="CyberSensor.html">Cyber Sensors</a></li>
+                        <li><a href="LiveCapture.html">Live Analysis</a></li>
+                        <li><a href="implants.html">Implants</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Attribution and Communication</a>
+                    <ul>
+                        <li><a href="attribution.html">Attribution</a></li>
+                        <li><a href="c2.html">Command and Control Communications</a></li>
+                        <li><a href="OperatorTradecraft.html">Call Signs</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Defense Strategies</a>
+                    <ul>
+                        <li><a href="sdlc.html">SDLC</a></li>
+                        <li><a href="authetnication.html">Anti-Privilege</a></li>
+                        <li><a href="twostepauthentication.html">2 Step Authentication</a></li>
+                        <li><a href="timeopp.html">Understanding Time and Opportunities</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Advanced Concepts</a>
+                    <ul>
+                        <li><a href="cyberLighNoiseAndLitter.html">Cyber Light, Noise, and Litter</a></li>
+                        <li><a href="adversarialOpp.html">Adversarial Opportunity</a></li>
+                        <li><a href="zeroday.html">Zero-Day</a></li>
+                        <li><a href="silentthreat.html">Zero-Trust Threat Management</a></li>
+                        <li><a href="ttps.html">Techniques, Tactics, and Procedures</a></li>
+                        <li><a href="threatopp.html">Threat Opportunity</a></li>
+                        <li><a href="cyberAttack.html">Cyber Attacks</a></li>
+                        <li><a href="Locks.html">Locks</a></li>
+                        <li><a href="NetworkBridges.html">Network Bridges</a></li>
+                        <li><a href="xsecurity.html">Xenophobic Security</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <img src="CTIimage.png" alt="CTI Image" class="large">
+            <h2>CTI</h2>
+            <p>Welcome to the introduction page for CTI. I will cover the fundamentals of Cyber Threat Intelligence (CTI) and provide practical experience as part of my next role in cybersecurity.</p>
+           
+            <p>The following topics I have covered include the 'what' and the 'how':</p>
+            <ul>
+                <li>Understanding the Threat Landscape</li>
+                <li>Detection and Analysis</li>
+                <li>Attribution and Communication</li>
+                <li>Defense Strategies</li>
+                <li>Advanced Concepts</li>
+            </ul>
+            
+            <p>Use the navigation links above to explore different topics and resources related to CTI 101.</p>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

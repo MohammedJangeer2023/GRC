@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrating SDLC with Cyber Threat Intelligence</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #000;
+            line-height: 1.6;
+            position: relative;
+            padding-bottom: 100px; /* Space for the bottom nav */
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        nav ul li {
+            margin: 5px 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 3px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #444;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2, h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Bottom navigation */
+        .bottom-nav {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .bottom-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .bottom-nav ul li {
+            margin: 0 10px;
+        }
+
+        .bottom-nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 3px;
+            transition: background-color 0.3s ease;
+        }
+
+        .bottom-nav ul li a:hover {
+            background-color: #444;
+        }
+
+        /* Make the page responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            header h1 {
+                font-size: 1.2em;
+            }
+
+            main {
+                padding: 10px;
+            }
+
+            section {
+                padding: 15px;
+            }
+
+            .bottom-nav ul {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Integrating SDLC with Cyber Threat Intelligence</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Introduction</h2>
+            <p>The Software Development Life Cycle (SDLC) is a framework that defines the stages involved in the development of software applications. By integrating Cyber Threat Intelligence (CTI) into the SDLC, organizations can enhance their security posture and mitigate risks throughout the development process.</p>
+            <img src="sdlc.jpg" alt="SDLC Overview">
+        </section>
+
+        <section>
+            <h2>1. Planning</h2>
+            <p>In the planning phase, security requirements are identified, and a project plan is created. Security objectives are set, and resources are allocated accordingly.</p>
+            <img src="planning.jpg" alt="Planning Phase">
+            <ul>
+                <li>Define security objectives</li>
+                <li>Allocate resources</li>
+                <li>Identify high-value assets</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>2. Requirements Analysis</h2>
+            <p>During requirements analysis, security requirements are gathered alongside functional requirements. Threat modeling is conducted to identify potential security risks.</p>
+            <img src="requirements.jpg" alt="Requirements Analysis">
+            <ul>
+                <li>Gather security requirements</li>
+                <li>Conduct threat modeling</li>
+                <li>Analyze risks and vulnerabilities</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. Design</h2>
+            <p>The design phase involves creating secure architecture and design specifications. Secure design principles are applied to ensure the system is resilient to attacks.</p>
+            <img src="design.jpg" alt="Design Phase">
+            <ul>
+                <li>Apply secure design principles</li>
+                <li>Create architecture diagrams</li>
+                <li>Review design for security vulnerabilities</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Implementation</h2>
+            <p>During implementation, secure coding practices are followed to develop the software. Static code analysis tools are used to identify vulnerabilities early in the development process.</p>
+            <img src="implementataion.jpg" alt="Implementation Phase">
+            <ul>
+                <li>Follow secure coding practices</li>
+                <li>Use static code analysis tools</li>
+                <li>Conduct code reviews</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>5. Testing</h2>
+            <p>In the testing phase, various security testing methods are employed to identify and fix vulnerabilities. This includes penetration testing, vulnerability scanning, and security audits.</p>
+            <img src="testing.jpg" alt="Testing Phase">
+            <ul>
+                <li>Perform penetration testing</li>
+                <li>Conduct vulnerability scanning</li>
+                <li>Execute security audits</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>6. Deployment</h2>
+            <p>During deployment, secure configuration management practices are applied. The system is monitored for any security incidents, and patches are applied as necessary.</p>
+            <img src="deploymement.jpg" alt="Deployment Phase">
+            <ul>
+                <li>Apply secure configuration management</li>
+                <li>Monitor for security incidents</li>
+                <li>Apply patches and updates</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>7. Maintenance</h2>
+            <p>The maintenance phase involves continuous monitoring and improvement of security measures. Incident response plans are implemented, and regular security training is conducted for staff.</p>
+            <img src="maintenance.jpg" alt="Maintenance Phase">
+            <ul>
+                <li>Continuous security monitoring</li>
+                <li>Implement incident response plans</li>
+                <li>Conduct regular security training</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Interactive Example: Threat Modeling</h2>
+            <div id="dfd"></div>
+            <p>This interactive diagram demonstrates how threat modeling can be used during the Requirements Analysis phase to identify potential security risks.</p>
+        </section>
+
+        <section>
+            <h2>Tools and Techniques</h2>
+            <p>We use a variety of tools and techniques to ensure security is embedded throughout the SDLC. Here are some examples:</p>
+            <ul>
+                <li>Nessus for vulnerability scanning</li>
+                <li>OWASP ZAP for penetration testing</li>
+                <li>SonarQube for static code analysis</li>
+            </ul>
+            <img src="toolstechnique.jpg" alt="Tools and Techniques">
+        </section>
+        <section>
+            <h2>Conclusion</h2>
+            <p>By embedding security early in the SDLC, organizations can significantly reduce the risk of security breaches and ensure that their software systems are robust and secure.</p>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const width = 600;  // Adjusted width
+            const height = 400; // Adjusted height
+
+            const svg = d3.select('#dfd')
+                .append('svg')
+                .attr('width', width)
+                .attr('height', height);
+
+            const nodes = [
+                { id: 1, name: 'External ISP', x: 50, y: 50, color: '#ff7f0e' },
+                { id: 2, name: 'ISP Router', x: 150, y: 50, color: '#2ca02c' },
+                { id: 3, name: 'Core Router', x: 250, y: 50, color: '#d62728' },
+                { id: 4, name: 'Firewall1', x: 350, y: 50, color: '#9467bd' },
+                { id: 5, name: 'Gateway Switch', x: 450, y: 50, color: '#8c564b' },
+                { id: 6, name: 'Web Server', x: 550, y: 50, color: '#e377c2' },
+                { id: 7, name: 'Admin User', x: 150, y: 150, color: '#7f7f7f' },
+                { id: 8, name: 'Standard User', x: 150, y: 250, color: '#7f7f7f' },
+                { id: 9, name: 'Intercepted Node', x: 300, y: 150, color: '#bcbd22' }
+            ];
+
+            const links = [
+                { source: 1, target: 2 },
+                { source: 2, target: 3 },
+                { source: 3, target: 4 },
+                { source: 4, target: 5 },
+                { source: 5, target: 6 },
+                { source: 7, target: 6 },
+                { source: 8, target: 6 },
+                { source: 1, target: 9, red: true },
+                { source: 9, target: 4, red: true },
+                { source: 9, target: 6, red: true }
+            ];
+
+            svg.selectAll('.link')
+                .data(links)
+                .enter()
+                .append('line')
+                .attr('class', d => `link${d.red ? ' red' : ''}`)
+                .attr('x1', d => nodes.find(n => n.id === d.source).x)
+                .attr('y1', d => nodes.find(n => n.id === d.source).y)
+                .attr('x2', d => nodes.find(n => n.id === d.target).x)
+                .attr('y2', d => nodes.find(n => n.id === d.target).y)
+                .style('stroke', d => d.red ? 'red' : 'black')
+                .style('stroke-width', 2);
+
+            svg.selectAll('.node')
+                .data(nodes)
+                .enter()
+                .append('circle')
+                .attr('class', 'node')
+                .attr('cx', d => d.x)
+                .attr('cy', d => d.y)
+                .attr('r', 10) // Adjusted radius
+                .attr('fill', d => d.color)
+                .call(d3.drag()
+                    .on('start', dragstarted)
+                    .on('drag', dragged)
+                    .on('end', dragended));
+
+            svg.selectAll('.label')
+                .data(nodes)
+                .enter()
+                .append('text')
+                .attr('x', d => d.x)
+                .attr('y', d => d.y - 15)
+                .text(d => d.name)
+                .attr('font-size', '8px') // Adjusted font size
+                .attr('text-anchor', 'middle');
+
+            const notes = [
+                { x: 250, y: 250, text: 'Note: External ISP is the starting point of the network.' },
+                { x: 200, y: 290, text: 'Note: Web Server interacts with both Admin and Standard Users.' },
+                { x: 300, y: 200, text: 'Note: Intercepted Node represents a potential security risk.' }
+            ];
+
+            svg.selectAll('.note')
+                .data(notes)
+                .enter()
+                .append('text')
+                .attr('x', d => d.x)
+                .attr('y', d => d.y)
+                .text(d => d.text)
+                .attr('font-size', '10px')
+                .attr('fill', '#000');
+
+            function dragstarted(event, d) {
+                d3.select(this).raise().attr('stroke', 'black');
+            }
+
+            function dragged(event, d) {
+                d3.select(this)
+                    .attr('cx', d.x = event.x)
+                    .attr('cy', d.y = event.y);
+
+                svg.selectAll('.link')
+                    .filter(l => l.source === d.id || l.target === d.id)
+                    .attr('x1', l => nodes.find(n => n.id === l.source).x)
+                    .attr('y1', l => nodes.find(n => n.id === l.source).y)
+                    .attr('x2', l => nodes.find(n => n.id === l.target).x)
+                    .attr('y2', l => nodes.find(n => n.id === l.target).y);
+            }
+
+            function dragended(event, d) {
+                d3.select(this).attr('stroke', null);
+            }
+        });
+    </script>
+</body>
+</html>
