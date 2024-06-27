@@ -50,7 +50,7 @@ Monitoring Tools:
 
 This section provides detailed information about the monitoring tools being developed and deployed. It includes descriptions of each tool, their functionalities, and how they contribute to the overall threat intelligence strategy.
 
-https://mohammedjangeer2023.github.io/GRC-CTI-Hub/
+https://mohammedjangeer2023.github.io/GRC-CTI-Hub/ - Updated Link
 
 
 
