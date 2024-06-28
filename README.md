@@ -1,3 +1,13 @@
+# News
+
+I'm excited to announce a new update release scheduled for 07/07/2024!
+
+- This update will feature a brand-new navigation layout, consolidating the GRC and CTI into one location.
+- I've added new links under Threat Intelligence, including the OWASP Top 10 and Juice Shop.
+- Additionally, I'll showcase various cyber tools and demonstrate how you can use them in your home lab.
+
+
+
 # GRC & CTI Hub
 
 Welcome to the official repository of the GRC (Governance, Risk, and Compliance) and CTI (Cyber Threat Intelligence) website. This website is designed to provide comprehensive insights into the security posture and threat intelligence activities of a fictitious company called MJ Residence. Below, you will find detailed instructions on navigating and utilising the website's various sections.
@@ -52,13 +62,7 @@ This section provides detailed information about the monitoring tools being deve
 
 https://mohammedjangeer2023.github.io/GRC-CTI-Hub/ - Updated Link
 
-#News
 
-I'm excited to announce a new update release scheduled for 07/07/2024!
-
-- This update will feature a brand-new navigation layout, consolidating the GRC and CTI into one location.
-- I've added new links under Threat Intelligence, including the OWASP Top 10 and Juice Shop.
-- Additionally, I'll showcase various cyber tools and demonstrate how you can use them in your home lab.
 
 
 
