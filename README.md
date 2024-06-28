@@ -52,6 +52,13 @@ This section provides detailed information about the monitoring tools being deve
 
 https://mohammedjangeer2023.github.io/GRC-CTI-Hub/ - Updated Link
 
+#News
+
+I'm excited to announce a new update release scheduled for 07/07/2024!
+
+- This update will feature a brand-new navigation layout, consolidating the GRC and CTI into one location.
+- I've added new links under Threat Intelligence, including the OWASP Top 10 and Juice Shop.
+- Additionally, I'll showcase various cyber tools and demonstrate how you can use them in your home lab.
 
 
 
